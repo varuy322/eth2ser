@@ -1,0 +1,23 @@
+this project aims to implement the ethernet transform data to RS485.
+
+===================================
+archive as follows:
+
+1.project name:eth2ser
+
+2.packages
+  ->2.1 sendSerialData
+        -->serialRead.py
+        -->serialCRC16.py
+  ->2.2 sendTcpData
+        -->tcpClient.py
+3.terminal test
+  ->3.1 test_terminal_rs485.py
+  ->3.2 test_terminal_tcpclient.py
+===========================================
+tips:
+please connect device and do some essential operations.
+eg:set host IP:192.168.2.X, port=8001
+use virtual serial port software to create virtual serial port,here com4.
+if your PC connect to the RS485,please run test_terminal_rs485.py,well you
+need to run the test_terminal_tcpclient.py if connected as ethernet.
